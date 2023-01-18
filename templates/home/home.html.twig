@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des articles{% endblock %}
+
+{% block body %}
+<table class="table table-hoverable table-striped" id="crud-list">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Auteur</th>
+            <th scope="col">Date de publication</th>
+            <th scope="col">Modifié le</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for post in allPostForTwig %}
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
